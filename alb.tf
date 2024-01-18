@@ -14,7 +14,6 @@ resource "aws_lb" "alb" {
   }
 }
 
-
 # Creates listener for private alb
 resource "aws_lb_listener" "private" {
   count             = var.INTERNAL ? 1 : 0
